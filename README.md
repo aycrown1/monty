@@ -29,7 +29,7 @@ Files containing Monty byte codes usually have the `.m` extension. Most of the i
 - Note: If the stack is empty, it does not print anything.
 
 - Example for push and pall opcodes:
-    ```bash
+    ```shell
     $ cat push.m
      push 10
      push 20
@@ -52,7 +52,7 @@ Files containing Monty byte codes usually have the `.m` extension. Most of the i
 - Usage: `pint`
 - Error: If the stack is empty, it prints the error message `L<line_number>: can't pint, stack empty`, followed by a new line, and exits with the status `EXIT_FAILURE`.
 - Example for pint opcode:
-     ```bash
+     ```shell
      $ cat pint.m
        push 10
        push 20
@@ -73,7 +73,7 @@ Files containing Monty byte codes usually have the `.m` extension. Most of the i
 - Usage: `swap`
 - Error: If the stack contains less than two elements, it prints the error message `L<line_number>: can't swap, stack too short`, followed by a new line, and exits with the status `EXIT_FAILURE`.
    Example for swap opcode:
-     ```bash
+     ```shell
      $ cat swap.m
      push 10
      push 20
@@ -98,7 +98,7 @@ Files containing Monty byte codes usually have the `.m` extension. Most of the i
 - Usage: `pop`
 - Error: If the stack is empty, it prints the error message `L<line_number>: can't pop an empty stack`, followed by a new line, and exits with the status `EXIT_FAILURE`.
    Example:
-     ```bash
+     ```shell
      $ cat pop.m
      push 10
      push 20
@@ -121,7 +121,7 @@ Files containing Monty byte codes usually have the `.m` extension. Most of the i
 - Usage: `add`
 - Error: If the stack contains less than two elements, it prints the error message `L<line_number>: can't add, stack too short`, followed by a new line, and exits with the status `EXIT_FAILURE`.
    Example:
-     ```bash
+     ```shell
      $ cat add.m
      push 10
      push 20
@@ -146,7 +146,7 @@ Files containing Monty byte codes usually have the `.m` extension. Most of the i
 - Usage: `sub`
 - Error: If the stack contains less than two elements, it prints the error message `L<line_number>: can't sub, stack too short`, followed by a new line, and exits with the status `EXIT_FAILURE`.
    Example:
-     ```bash
+     ```shell
      $ cat sub.m
      push 10
      push 20
@@ -171,7 +171,7 @@ Files containing Monty byte codes usually have the `.m` extension. Most of the i
   - If the top element of the stack is 0, it prints the error message `L<line_number>: division by zero`, followed by a new line, and exits with the status `EXIT_FAILURE`.
   
      Example:
-    ```bash
+    ```shell
      $ cat div.m
      push 10
      push 20
@@ -220,7 +220,7 @@ In the first file `div.m`:
  - Error: If the stack contains less than two elements, it prints the error message `L<line_number>: can't mul, stack too short`, followed by a new line, and exits with the status `EXIT_FAILURE`.
   
      Example:
-     ```bash
+     ```shell
      $ cat mul.m
      push 10
      push 20
@@ -254,7 +254,7 @@ In the first file `div.m`:
    - If the stack contains less than two elements, it prints the error message `L<line_number>: can't mod, stack too short`, followed by a new line, and exits with the status `EXIT_FAILURE`.
    - If the top element of the stack is 0, it prints the error message `L<line_number>: division by zero`, followed by a new line, and exits with the status `EXIT_FAILURE`.
      Example:
-     ```bash
+     ```shell
      $ cat mod.m
      push 10
      push 20
@@ -289,7 +289,7 @@ In the first file `div.m`:
    - If the stack is empty, it prints the error message `L<line_number>: can't pchar, stack empty`, followed by a new line, and exits with the status `EXIT_FAILURE`.
    
      Example:
-     ```bash
+     ```shell
      $ cat pchar.m
      push 65
      pchar
@@ -315,7 +315,7 @@ Therefore, after executing the given instructions, the character 'A' will be pri
    - The integer stored in each element of the stack is treated as the ASCII value of the character to be printed.
    - The string stops when either the stack is empty, the value of the element is 0, or the value of the element is not in the ASCII table.
      Example:
-     ```bash
+     ```shell
      push 111
      push 108
      push 108
